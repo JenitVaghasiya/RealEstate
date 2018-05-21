@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace RealEstate.MVC.Services
+﻿namespace RealEstate.MVC.Services
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+
     public interface IEmailSender
     {
         Task SendEmailAsync(string email, string subject, string message);

@@ -1,21 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Encodings.Web;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using RealEstate.MVC.Models;
-using RealEstate.MVC.Models.ManageViewModels;
-using RealEstate.MVC.Services;
-
-namespace RealEstate.MVC.Controllers
+﻿namespace RealEstate.MVC.Controllers
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Text.Encodings.Web;
+    using System.Threading.Tasks;
+    using Microsoft.AspNetCore.Authentication;
+    using Microsoft.AspNetCore.Authorization;
+    using Microsoft.AspNetCore.Identity;
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.Extensions.Logging;
+    using Microsoft.Extensions.Options;
+    using RealEstate.MVC.Models;
+    using RealEstate.MVC.Models.ManageViewModels;
+    using RealEstate.MVC.Services;
+
     [Authorize]
     [Route("[controller]/[action]")]
     public class ManageController : Controller
@@ -491,8 +491,6 @@ namespace RealEstate.MVC.Controllers
             return View(nameof(ShowRecoveryCodes), model);
         }
 
-        #region Helpers
-
         private void AddErrors(IdentityResult result)
         {
             foreach (var error in result.Errors)
@@ -510,6 +508,7 @@ namespace RealEstate.MVC.Controllers
                 result.Append(unformattedKey.Substring(currentPosition, 4)).Append(" ");
                 currentPosition += 4;
             }
+
             if (currentPosition < unformattedKey.Length)
             {
                 result.Append(unformattedKey.Substring(currentPosition));
@@ -539,7 +538,5 @@ namespace RealEstate.MVC.Controllers
             model.SharedKey = FormatKey(unformattedKey);
             model.AuthenticatorUri = GenerateQrCodeUri(user.Email, unformattedKey);
         }
-
-        #endregion
     }
 }
