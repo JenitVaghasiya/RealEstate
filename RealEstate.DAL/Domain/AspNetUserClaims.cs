@@ -11,9 +11,11 @@
         [Required(ErrorMessage = "Id is required")]
         [Display(Name = "Id")]
         public int Id { get; set; }
+
         [MaxLength]
         [Display(Name = "Claim Type")]
         public string ClaimType { get; set; }
+
         [MaxLength]
         [Display(Name = "Claim Value")]
         public string ClaimValue { get; set; }

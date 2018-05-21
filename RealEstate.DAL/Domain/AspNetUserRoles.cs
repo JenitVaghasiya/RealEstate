@@ -9,8 +9,8 @@
     {
         public AspNetUserRoles()
         {
-            this.AspNetRoles = new List<AspNetRoles>();
-            this.AspNetUsers = new List<AspNetUsers>();
+            AspNetRoles = new List<AspNetRoles>();
+            AspNetUsers = new List<AspNetUsers>();
         }
 
         [Key]
@@ -24,6 +24,7 @@
         public string RoleId { get; set; }
 
         public List<AspNetRoles> AspNetRoles { get; set; }
+
         public List<AspNetUsers> AspNetUsers { get; set; }
     }
 }

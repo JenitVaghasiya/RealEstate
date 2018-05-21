@@ -9,8 +9,8 @@
     {
         public Item()
         {
-            this.Inventories = new List<Inventory>();
-            this.ItemRentals = new List<ItemRental>();
+            Inventories = new List<Inventory>();
+            ItemRentals = new List<ItemRental>();
         }
 
         [Key]
@@ -18,26 +18,32 @@
         [Required(ErrorMessage = "Item Id is required")]
         [Display(Name = "Item Id")]
         public int ItemId { get; set; }
+
         [MaxLength(50)]
         [StringLength(50)]
         [Display(Name = "Item Brand")]
         public string ItemBrand { get; set; }
+
         [MaxLength(50)]
         [StringLength(50)]
         [Display(Name = "Item Type")]
         public string ItemType { get; set; }
+
         [MaxLength(50)]
         [StringLength(50)]
         [Display(Name = "Item Model Id")]
         public string ItemModelId { get; set; }
+
         [Display(Name = "Item Price")]
         public decimal? ItemPrice { get; set; }
+
         [MaxLength(100)]
         [StringLength(100)]
         [Display(Name = "Item Description")]
         public string ItemDescription { get; set; }
 
         public List<Inventory> Inventories { get; set; }
+
         public List<ItemRental> ItemRentals { get; set; }
     }
 }

@@ -13,6 +13,7 @@
         [Required(ErrorMessage = "Login Provider is required")]
         [Display(Name = "Login Provider")]
         public string LoginProvider { get; set; }
+
         [Key]
         [Column(Order = 2)]
         [MaxLength(450)]
@@ -20,6 +21,7 @@
         [Required(ErrorMessage = "Provider Key is required")]
         [Display(Name = "Provider Key")]
         public string ProviderKey { get; set; }
+
         [MaxLength]
         [Display(Name = "Provider Display Name")]
         public string ProviderDisplayName { get; set; }

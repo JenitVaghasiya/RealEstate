@@ -9,7 +9,7 @@
     {
         public AppartmentComplex()
         {
-            this.Branches = new List<Branch>();
+            Branches = new List<Branch>();
         }
 
         [Key]
@@ -17,6 +17,7 @@
         [Required(ErrorMessage = "Apartment Complex Id is required")]
         [Display(Name = "Apartment Complex Id")]
         public int ApartmentComplexId { get; set; }
+
         [MaxLength(200)]
         [StringLength(200)]
         [Display(Name = "Apartment Complex Name")]
