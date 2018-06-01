@@ -15,7 +15,6 @@
 
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [Required(ErrorMessage = "Item Id is required")]
         [Display(Name = "Item Id")]
         public int ItemId { get; set; }
 

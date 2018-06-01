@@ -1,4 +1,4 @@
-﻿namespace Civica.Proact.Database
+﻿namespace RealEstate.Database
 {
     using System;
     using System.Diagnostics;

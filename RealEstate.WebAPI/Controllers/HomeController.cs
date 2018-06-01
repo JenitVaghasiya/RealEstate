@@ -8,8 +8,7 @@
 
     public class HomeController : Controller
     {
-        [HttpGet("/", Name = "Home")]
-        public IActionResult Home()
+        public IActionResult Index()
         {
             return View();
         }

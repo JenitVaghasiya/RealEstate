@@ -9,7 +9,7 @@
     {
         public ParkingType()
         {
-            this.Parkings = new List<Parking>();
+            Parkings = new List<Parking>();
         }
 
         [Key]
@@ -17,11 +17,12 @@
         [Required(ErrorMessage = "Parking Type Id is required")]
         [Display(Name = "Parking Type Id")]
         public int ParkingTypeId { get; set; }
+
         [MaxLength(100)]
         [StringLength(100)]
         [Display(Name = "Parking Type Name")]
         public string ParkingTypeName { get; set; }
 
         public List<Parking> Parkings { get; set; }
-    }   
+    }
 }

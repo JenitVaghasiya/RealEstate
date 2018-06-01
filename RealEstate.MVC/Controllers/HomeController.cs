@@ -6,7 +6,7 @@
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Mvc;
-    using RealEstate.MVC.Models;
+    using RealEstate.Models;
 
     public class HomeController : Controller
     {

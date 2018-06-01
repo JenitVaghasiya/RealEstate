@@ -10,7 +10,7 @@
     {
         public Tenant()
         {
-            this.ItemRentals = new List<ItemRental>();
+            ItemRentals = new List<ItemRental>();
         }
 
         [Key]
@@ -18,16 +18,20 @@
         [Required(ErrorMessage = "Tenant Id is required")]
         [Display(Name = "Tenant Id")]
         public int TenantId { get; set; }
+
         [MaxLength(50)]
         [StringLength(50)]
         [Display(Name = "Tenant Name")]
         public string TenantName { get; set; }
+
         [Display(Name = "Tenant DOB")]
         public DateTime? TenantDOB { get; set; }
+
         [MaxLength(50)]
         [StringLength(50)]
         [Display(Name = "Tenant Email")]
         public string TenantEmail { get; set; }
+
         [MaxLength(15)]
         [StringLength(15)]
         [Display(Name = "Tenant Phone No")]

@@ -9,13 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealEstate.DAL", "RealEstat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealEstate.Database", "RealEstate.Database\RealEstate.Database.csproj", "{283294B7-B809-4980-AC36-3AF74D6DB541}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstate.WebAPI", "RealEstate.WebAPI\RealEstate.WebAPI.csproj", "{753398BA-8A7E-4E44-AB4F-B1CAE8469EA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealEstate.WebAPI", "RealEstate.WebAPI\RealEstate.WebAPI.csproj", "{753398BA-8A7E-4E44-AB4F-B1CAE8469EA7}"
 	ProjectSection(ProjectDependencies) = postProject
 		{CE6C5C0F-6273-40DE-AB13-7D9FB248A57C} = {CE6C5C0F-6273-40DE-AB13-7D9FB248A57C}
 		{B9C46682-BEB4-4B93-B2EE-718458087752} = {B9C46682-BEB4-4B93-B2EE-718458087752}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstate.BAL", "RealEstate.BAL\RealEstate.BAL.csproj", "{CE6C5C0F-6273-40DE-AB13-7D9FB248A57C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealEstate.BAL", "RealEstate.BAL\RealEstate.BAL.csproj", "{CE6C5C0F-6273-40DE-AB13-7D9FB248A57C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstate.MVC.Jquery", "RealEstate.MVC.Jquery\RealEstate.MVC.Jquery.csproj", "{4F4FEBE1-1C02-4991-8EBC-C78B556F543F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,11 +45,39 @@ Global
 		{CE6C5C0F-6273-40DE-AB13-7D9FB248A57C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE6C5C0F-6273-40DE-AB13-7D9FB248A57C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE6C5C0F-6273-40DE-AB13-7D9FB248A57C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F4FEBE1-1C02-4991-8EBC-C78B556F543F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F4FEBE1-1C02-4991-8EBC-C78B556F543F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F4FEBE1-1C02-4991-8EBC-C78B556F543F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F4FEBE1-1C02-4991-8EBC-C78B556F543F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EF05D3F1-6A9D-4B17-A01E-0ED2EBF58496}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://mobashar.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = RealEstate.MVC\\RealEstate.MVC.csproj
+		SccProjectName1 = RealEstate.MVC
+		SccLocalPath1 = RealEstate.MVC
+		SccProjectUniqueName2 = RealEstate.DAL\\RealEstate.DAL.csproj
+		SccProjectName2 = RealEstate.DAL
+		SccLocalPath2 = RealEstate.DAL
+		SccProjectUniqueName3 = RealEstate.Database\\RealEstate.Database.csproj
+		SccProjectName3 = RealEstate.Database
+		SccLocalPath3 = RealEstate.Database
+		SccProjectUniqueName4 = RealEstate.WebAPI\\RealEstate.WebAPI.csproj
+		SccProjectName4 = RealEstate.WebAPI
+		SccLocalPath4 = RealEstate.WebAPI
+		SccProjectUniqueName5 = RealEstate.BAL\\RealEstate.BAL.csproj
+		SccProjectName5 = RealEstate.BAL
+		SccLocalPath5 = RealEstate.BAL
+		SccProjectUniqueName6 = RealEstate.MVC.Jquery\\RealEstate.MVC.Jquery.csproj
+		SccProjectName6 = RealEstate.MVC.Jquery
+		SccLocalPath6 = RealEstate.MVC.Jquery
 	EndGlobalSection
 EndGlobal

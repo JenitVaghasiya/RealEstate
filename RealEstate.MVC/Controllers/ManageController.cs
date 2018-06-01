@@ -12,8 +12,8 @@
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Logging;
     using Microsoft.Extensions.Options;
-    using RealEstate.MVC.Models;
-    using RealEstate.MVC.Models.ManageViewModels;
+    using RealEstate.Models;
+    using RealEstate.Models.ManageViewModels;
     using RealEstate.MVC.Services;
 
     [Authorize]

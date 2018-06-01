@@ -1,0 +1,49 @@
+﻿@model IEnumerable<RealEstate.DAL.Domain.Item>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+@(Html.Kendo().Grid<RealEstate.DAL.Domain.Item>()
+            .Name("Grid")
+            .Columns(columns =>
+            {
+                columns.Bound(p => p.ItemBrand);
+                columns.Bound(p => p.ItemDescription).Width(140);
+                columns.Bound(p => p.ItemPrice).Width(140);
+                columns.Command(command => { command.Edit(); command.Destroy(); }).Width(250);
+            })
+            .ToolBar(tools =>
+            {
+                tools.Create();
+            })
+          .Sortable()
+          .Pageable()
+          .Filterable()
+          .DataSource(dataSource =>
+              dataSource
+                .WebApi()
+                .Model(model =>
+                {
+                    model.Id(p => p.ItemId);
+                })
+                .Read(read => read.Action("GetItems", "Items"))
+                .Create(create => create.Action("Create", "Items"))
+                .Update(update => update.Action("Edit", "Items", new { id = "{0}" }))
+                .Destroy(destroy => destroy.Action("DELETE", "Items", new { id = "{0}" }))
+          )
+)
+<script>
+    function parameterMap(options, operation) {
+        debugger
+        if (operation !== "read" && options.models) {
+            return { models: kendo.stringify(options.models) };
+        }
+    }
+</script>

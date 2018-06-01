@@ -11,9 +11,11 @@
         [Required(ErrorMessage = "Key Assign Id is required")]
         [Display(Name = "Key Assign Id")]
         public int KeyAssignId { get; set; }
+
         [Required(ErrorMessage = "Key Id is required")]
         [Display(Name = "Key Id")]
         public int KeyId { get; set; }
+
         [Required(ErrorMessage = "Apartment Id is required")]
         [Display(Name = "Apartment Id")]
         public int ApartmentId { get; set; }

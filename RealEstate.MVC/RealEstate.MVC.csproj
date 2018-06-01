@@ -1,16 +1,24 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
     <TargetFramework>netcoreapp2.0</TargetFramework>
-    <UserSecretsId>aspnet-RealEstate.MVC-4970B1C9-808D-4418-844D-E1BCDF9EEB96</UserSecretsId>
     <CodeAnalysisRuleSet>..\StyleCopRules.ruleset</CodeAnalysisRuleSet>
+    <UserSecretsId>aspnet-RealEstate.MVC-2368CEEF-70CE-4AAD-92A6-1E7F873EDDDE</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
     <Compile Remove="Data\**" />
+    <Compile Remove="Models\**" />
     <Content Remove="Data\**" />
+    <Content Remove="Models\**" />
     <EmbeddedResource Remove="Data\**" />
+    <EmbeddedResource Remove="Models\**" />
     <None Remove="Data\**" />
+    <None Remove="Models\**" />
   </ItemGroup>
 
 
@@ -30,6 +38,10 @@
     <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.3" />
     <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.2" />
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RealEstate.DAL\RealEstate.DAL.csproj" />
   </ItemGroup>
 
 </Project>
